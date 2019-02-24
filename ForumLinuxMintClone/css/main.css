@@ -1,8 +1,24 @@
 body{
     background-color: #E4FFC9;
+    padding: 12px 0;
+    line-height: normal;
+    font-size: 10px;
 }
 
-h1{
+header{
     color: #ffffff;
+    font-size: 10px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(89,103,75,1), rgba(89,103,75,0.8));
+    background-repeat: repeat-x;
+    margin: 15px 15px 15px 4px;
+    padding: 5px 5px 10px;
+    border-radius: 10px;
+}
+
+#imagem-logo{
+    width: 201px;
+    height: 60px;
+    padding: 10px;
+    float: left;
 }
