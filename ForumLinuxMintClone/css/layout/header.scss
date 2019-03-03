@@ -1,26 +1,63 @@
-header{
+header {
     color: #ffffff;
     font-size: 10px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(rgba(89,103,75,1), rgba(89,103,75,0.8));
+    background-image: $background-color-itens;
     background-repeat: repeat-x;
     margin: 15px 15px 15px 4px;
     padding: 5px 5px 10px;
     border-radius: 10px;
 }
 
-header .container{
+header .container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center;    
 }
 
-#imagem-logo{
+#imagem-logo {
     width: 201px;
     height: 60px;
     padding: 10px;
+    float: left;
 }
 
-.header-search-form .header-form-input{
+.header-search-form .header-form-input {
     display: flex;
+}
+
+#header-intro {
+    p {
+        margin: 0 auto;
+    }
+    
+    h1 {
+        margin: 0 auto;
+    }
+    
+    flex-grow: 1;
+}
+
+fieldset {
+    border: 0px;
+}
+
+
+@media (max-width: 700px){
+    #imagem-logo, .header-search-form, p{
+        display: none;
+    }
+    h1{
+        margin: 0 auto;
+    }
+    #header-intro{
+        display: flex;
+    }
+    header{
+        margin: 0;
+        border-radius: 0;
+    }
+    body{
+        padding: 0;
+    }
+    
 }
