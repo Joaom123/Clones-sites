@@ -1,0 +1,17 @@
+nav{
+    background-color: $background-color-nav;
+    margin: 15px 15px 15px 4px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-sup{
+    li{
+        border: 5px;
+    }
+}
