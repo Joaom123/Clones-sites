@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="João Marcus" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="A copy of Linux Mint Forum" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="icon" href="img/linux-mint-logo.jpg" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Linux Mint Forums Clone</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="João Marcus">
-  <meta name="description" content="A copy of Linux Mint Forum">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="icon" href="img/linux-mint-logo.jpg">
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  
-  -->
-  <title>Linux Mint Forums Clone</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <section id="header-img">
+          <a href="https://forums.linuxmint.com/" title="Visit o Forum Oficial">
+            <img
+              id="imagem-logo"
+              src="img/Linux_Mint_Official_Logo.svg"
+              alt="Imagem não encontrada"
+            />
+          </a>
+        </section>
+        <section id="header-intro">
+          <h1 id="header-intro-title">Linux Mint Forums</h1>
+          <p id="header-intro-paragraph">
+            Welcome to the Linux Mint forums! For help, knowledge, and
+            fellowship.
+          </p>
+        </section>
+        <section id="header-form">
+          <form action="" target="_self" class="header-search-form">
+            <fieldset>
+              <div class="header-form-input">
+                <input
+                  class="header-form-input-text"
+                  type="text"
+                  placeholder="Search..."
+                  name="search"
+                  size="20"
+                />
+                <button class="button" type="submit" title="search">
+                  <i class="form-button-icon material-icons">search</i>
+                </button>
+                <button class="button" type="submit" title="advanced-search">
+                  <i class="form-button-icon material-icons">settings</i>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="container">
-      <section id="header-img">
-        <a href="https://forums.linuxmint.com/" title="Visit o Forum Oficial">
-          <img id="imagem-logo" src="img/Linux_Mint_Official_Logo.svg" alt="Imagem não encontrada">
-        </a>
-      </section>
-      <section id="header-intro">
-        <h1 id="header-intro-title">Linux Mint Forums</h1>
-        <p id="header-intro-paragraph">Welcome to the Linux Mint forums! For help, knowledge, and fellowship.</p>
-      </section>
-      <section id="header-form">
-        <form action="" target="_self" class="header-search-form">
-          <fieldset>
-            <div class="header-form-input">
-              <input class="header-form-input-text" type="text" placeholder="Search..." name="search" size="20">
-              <button class="button button-search" type="submit" title="search">
-                <i class="form-button-icon material-icons">search</i>
-              </button>
-              <button class="button button-advanced-search" type="submit" title="advanced-search">
-                <i class="form-button-icon material-icons">settings</i>
-              </button>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-
-
-    </div>
-  </header>
-
-  <nav>
-    <ul class="nav-sup">
-      <li>Quick links</li>
-      <li>FAQ</li>
-      <li>Register</li>
-      <li>Login</li>
-    </ul>
-    <ul class="nav-inf">
-      <li>Board index</li>
-      <li></li>
-    </ul>
-  </nav>
-</body>
-
+    <nav class="nav-menu">
+      <ul id="nav-sup">
+        <div id="nav-sup-left">
+          <li>
+            <a class="nav-menu-link" href=""
+              ><i class="nav-menu-link-icons material-icons"> menu </i>Quick
+              links</a
+            >
+          </li>
+          <li>
+            <a class="nav-menu-link" href=""
+              ><i class="nav-menu-link-icons material-icons"> help </i>FAQ</a
+            >
+          </li>
+        </div>
+        <div id="nav-sup-right">
+          <li>
+            <a class="nav-menu-link" href=""
+              ><i class="nav-menu-link-icons material-icons"> input </i
+              >Register</a
+            >
+          </li>
+          <li>
+            <a class="nav-menu-link" href=""
+              ><i class="nav-menu-link-icons material-icons"> power_settings_new </i>Login</a
+            >
+          </li>
+        </div>
+      </ul>
+      <ul id="nav-inf">
+        <li>
+          <a class="nav-menu-link" href=""
+            ><i class="nav-menu-link-icons material-icons"> home </i>Board
+            index</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
