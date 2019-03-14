@@ -8,12 +8,10 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="icon" href="img/linux-mint-logo.jpg">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <!-- 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+  
   -->
   <title>Linux Mint Forums Clone</title>
 </head>
@@ -21,24 +19,35 @@
 <body>
   <header>
     <div class="container">
-      <a href="https://forums.linuxmint.com/" title="Visit o Forum Oficial">
-        <img src="img/Linux_Mint_Official_Logo.svg" alt="Imagem não encontrada" id="imagem-logo">
-      </a>
-      <div id="header-intro">
-        <h1>Linux Mint Forums</h1>
-        <p>Welcome to the Linux Mint forums! For help, knowledge, and fellowship.</p>
-      </div>
-      <form action="" target="_self" class="header-search-form">
-        <fieldset>
-          <div class="header-form-input">
-            <input class="header-form-input-text" type="text" placeholder="Search..." name="search" size="20">
-            <button class="button button-search" type="submit" title="search"><i class="icon-search"></i></button>
-            <button class="button button-advanced-search" type="submit" title="advanced-search"></button>
-          </div>
-        </fieldset>
-      </form>
+      <section id="header-img">
+        <a href="https://forums.linuxmint.com/" title="Visit o Forum Oficial">
+          <img id="imagem-logo" src="img/Linux_Mint_Official_Logo.svg" alt="Imagem não encontrada">
+        </a>
+      </section>
+      <section id="header-intro">
+        <h1 id="header-intro-title">Linux Mint Forums</h1>
+        <p id="header-intro-paragraph">Welcome to the Linux Mint forums! For help, knowledge, and fellowship.</p>
+      </section>
+      <section id="header-form">
+        <form action="" target="_self" class="header-search-form">
+          <fieldset>
+            <div class="header-form-input">
+              <input class="header-form-input-text" type="text" placeholder="Search..." name="search" size="20">
+              <button class="button button-search" type="submit" title="search">
+                <i class="form-button-icon material-icons">search</i>
+              </button>
+              <button class="button button-advanced-search" type="submit" title="advanced-search">
+                <i class="form-button-icon material-icons">settings</i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+
     </div>
   </header>
+
   <nav>
     <ul class="nav-sup">
       <li>Quick links</li>
@@ -51,10 +60,6 @@
       <li></li>
     </ul>
   </nav>
-  <main>
-  </main>
-  <footer>
-  </footer>
 </body>
 
 </html>
