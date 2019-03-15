@@ -1,16 +1,16 @@
 /* GERAL */
-header {
+.header {
     color: #ffffff;
     font-size: 10px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background-image: $background-color-itens;
+    background-image: $bg-color-header;
     background-repeat: repeat-x;
-    margin: 15px 15px 15px 4px;
-    padding: 5px 5px 10px;
+    margin: 5px 15px 5px 4px;
+    padding: 5px;
     border-radius: 10px;
 }
 
-header .container {
+.header .container {
     display: flex;
     align-items: center;
 }
@@ -19,22 +19,27 @@ header .container {
 #imagem-logo {
     width: 201px;
     height: 60px;
-    padding: 10px;
+    padding: 13px;
     float: left;
 }
 
 /*INTRO*/
 #header-intro {
-
-    #header-intro-title,
-    #header-intro-paragraph {
-        margin: 0 auto;
-    }
-
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    height: 60px;
+
+    #header-intro-title{
+        font-size: 2.4em;
+        font-weight: bold;
+    }
+
+    #header-intro-paragraph{
+        font-size: 1.1em;
+    }
 }
 
 /*CAIXA DE PESQUISA*/
@@ -42,17 +47,18 @@ header .container {
     display: flex;
     font-size: 1.5em;
 
-    fieldset {
-        border: 0px;
-    }
-
     .header-form-input-text {
         border-radius: 6px 0px 0px 6px;
-        margin: 0;
+    }
+
+    .button{
+        padding: 3px;
+        padding-bottom: 1px;
     }
 
     .material-icons {
         font-size: 18px;
+        color: #8f8f8f;
     }
 
 }
@@ -62,11 +68,11 @@ header .container {
 
     #imagem-logo,
     .header-search-form,
-    p {
+    #header-intro-paragraph {
         display: none;
     }
 
-    h1 {
+    #header-intro-title {
         margin: 0 auto;
     }
 
@@ -74,7 +80,7 @@ header .container {
         display: flex;
     }
 
-    header {
+    .header {
         margin: 0;
         border-radius: 0;
     }
